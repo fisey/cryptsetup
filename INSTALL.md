@@ -2,13 +2,8 @@
 ---
 
 ### Partition layout
-EFI partition (only needed if secure boot is activated and use uefi), boot partition, cryptsetup partition
-*Type* 		*fstype*	*size*
-efi 		vfat		550M
-boot 		ext4		2G
-cryptsetup 	luks 		100% rest
+EFI partition (only needed if secure boot is activated and use uefi), boot partition, cryptsetup partition.
 
-- Create this partition schema via parted or disk
 ```bash
 sudo fdisk /dev/nvme0n1
 ```
