@@ -4,6 +4,7 @@
 ### Description
 I switched from Mac to Ubuntu. Due to company policies I need to encrypt my system setup. Because the standard ubuntu setup comes
 with a partition schema I don't like, I decided to create for myself a short guideline. You can find more detailed guidelines on websearches as well.
+
 ---
 
 ### Partition layout
@@ -33,6 +34,7 @@ sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | sudo fdisk /dev/nvme0n1
   q
 EOF
 ```
+
 ---
 
 ### Cryptsetup
